@@ -1,0 +1,35 @@
+Git commands ---
+
+git init  - Initialize git repo
+git status - Git file status which is staged and which is not staged
+git branch -M branch_name - create new branch 
+git commit -m "comment" - commiting your changes
+git branch - to see all the branches
+git switch branch_name / git checkout branch_name - to go into the specific branch
+git checkout -b branch_name / git switch -c branch_name  - create a new branch and will go to the new branch 
+git branch -d  branch_name - delete a specific branch
+git checkout file_name - discard all the files which are not in staged area
+git checkout commit_log_id - head will be pointed to that specific commit log
+git rm --cached file_name - if some file has been staged mistakenly and you want to unstage it
+git checkout -b branch_name - to create a branch from a commit log
+git commit --amend -m "commit_message" - to add some modified work in the previous commit(like you've forgot to add somethimg 
+																							in the feature you have just pushed.)
+git commit -am "commit_message" - It will commit all those tracked files so we don't need to manually run "git add file_name"
+git branch -m  "new_branch_name" - rename the branch you are currently in	
+git stash - to save my current branch changes in a temporary directory and checkout to another branch , so my current branch changes will not 
+																		go into the branch where i want to checkout
+git stash pop - to get the last stashed changes
+git stash list - to see the stashed changes
+git stash apply - it will apply all the stashed changes but it will not delete the stashed change from the stashed list
+git stash drop "stash_name" - drop the stash from the stashed list
+git stash clear - to clear the whole stashed list
+git stash -- file_name - stash only the file which we want
+git stash -m  "message" -- file_name - stash only the file which we want with a specific message
+git stash apply stash_name - apply the stash we want 
+git stash show stash_name - show changes in stash before apply
+git stash show -p stash_name - show all the code changes in stash before apply
+git stash --keep-index - basically when we do git stash then all the staged and unstaged changes go into stash but using this command 
+																		we can assure that only unstaged changes will be stashed.
+!!! Important  - if we run git stash then any new created file which is not tracked by git will not be stashed
+git stash --include-untracked - includes all the files into stash,untracked file also
+

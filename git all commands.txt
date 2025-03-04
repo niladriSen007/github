@@ -33,3 +33,6 @@ git stash --keep-index - basically when we do git stash then all the staged and 
 !!! Important  - if we run git stash then any new created file which is not tracked by git will not be stashed
 git stash --include-untracked - includes all the files into stash,untracked file also
 
+git push origin new_branch_name - will push the local branch to remote
+git push origin --delete new_branch_name - will delete the branch from remote
+
